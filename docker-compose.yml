@@ -1,8 +1,8 @@
 version: '3.9'
 services:
-  nestapp:
-    container_name: nestapp
-    image: gkassym/nestapp:1.0.0
+  nest_academy_app:
+    container_name: nest-academy-app
+    image: gkassym/nest-academy-app:1.0.0
     build: .
     ports:
       - '3000:3000'
@@ -12,22 +12,11 @@ services:
       - PG_PASSWORD=postgres
       - PG_DB=postgres
       - PG_PORT=5432
-      - PG_HOST=db
+      - PG_HOST=database
     depends_on:
-      - db
-  pgadmin:
-    image: dpage/pgadmin4
-    restart: always
-    container_name: nest-pgadmin4
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=
-      - PGADMIN_DEFAULT_PASSWORD=
-    ports:
-      - '5050:80'
-    depends_on:
-      - db
-  db:
-    container_name: db
+      - database
+  database:
+    container_name: database
     image: postgres
     environment:
       POSTGRES_USER: postgres
