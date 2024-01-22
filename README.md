@@ -86,7 +86,7 @@ npm start
 ```
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*32CPrzOIIlGwSFGUJsbLqQ.png" width="200" alt="Nest Example" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*32CPrzOIIlGwSFGUJsbLqQ.png" width="500" alt="Nest Example" /></a>
 </p>
 
 ## Generating a New Module
